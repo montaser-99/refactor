@@ -1,0 +1,107 @@
+/* //GLOBAL */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #f4f4f9;
+    --white: #fff;
+    --dark-bg: #343a40;
+    --text-color: #666;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+  }
+  /* ///////////////////////////////header */
+  
+  .header, footer {
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .header {
+    background-color: var(--primary-color);
+    padding: 40px 0;
+    position: relative;
+  }
+  
+  .header::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 5px;
+    background-color: var(--white);
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .nav-links a {
+    color: var(--white);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  /* ///////////////////////////////////////////////////////////////////// */
+  
+  .post, .sidebar {
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post {
+    border: 1px solid #ddd;
+    background-color: var(--white);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sidebar {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+  /* //////////////////////////////////////////////////////////////////////////////////////
+  footer */
+  
+  footer {
+    background-color: var(--dark-bg);
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
